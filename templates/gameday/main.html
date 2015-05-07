@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<head>
+
+<!-- Chartbeat -->
+	<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+	<!-- /Chartbeat -->
+	
+<title>Husker Game Day archives- Omaha.com and the Omaha World-Herald</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-itunes-app" content="app-id=472372169" />
+<meta name="description" content="Award-winning Nebraska football coverage from Big Red Today and the Omaha World-Herald." />
+
+<meta property="og:title" content="Nebraska football Game Day archvies" />
+<meta property="og:description" content="Award-winning Nebraska football coverage from Big Red Today and the Omaha World-Herald." />
+<meta property="og:image" content="http://dataomaha.com/media/gameday/gameday-icon.png" />
+<meta property="og:url" content="http://dataomaha.com/gameday" />
+<meta property="og:type" content="website" />
+
+<link rel="canonical" href="http://dataomaha.com/gameday" />
+<link rel="apple-touch-icon-precomposed" href="/media/gameday/gameday-icon.png" />
+<link rel="icon" type="image/png" href="/media/gameday/gameday-icon.png">
+
+<link rel="stylesheet" type="text/css" href="/media/gameday/gameday.css">
+<link rel="stylesheet" type="text/css" href="/media/gameday/mobile.css" media="screen and (max-width:641px)" />
+
+<style>
+	body { background: #000 url(http://dataomaha.com/media/traditions/stadium1.jpg) top center no-repeat; }
+	div#container { background: transparent; box-shadow: none; }
+	div#container li { background: #fff; padding: 1em; margin: 1em auto; list-style: none; width: 40%; min-width: 300px; font-family: Chunk, Arial, sans-serif; font-weight: normal; font-size: 1.5em; box-shadow: 0 2px 5px #000;  }
+	img.logo { width: 80px; float: left; margin-right: 1em; }
+	div#container li a:hover { color: #c80000; }
+	
+</style>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17420602-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- BH Media Google Analytics  -->
+
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-43117949-3', 'omaha.com');
+			  ga('send', 'pageview');
+		</script>
+
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=333670310003233";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="header">
+			
+				<div class="sharing" style="float: right; position: absolute; top: 10px; right: 10px;">
+				
+				<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1375828408.html#_=1377844623714&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdataomaha.com%2Fgameday%2F{{ gameday.season }}%2F{{ gameday.slug }}%2F&amp;size=m&amp;text=Game%20Day%20-%20Nebraska%20vs%20{{ gameday.opponent }}&amp;url=http%3A%2F%2Fdataomaha.com%2Fgameday%2F{{ gameday.season }}%2F{{ gameday.slug }}%2F&amp;via=OWHbigred" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe> <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+				<fb:like href="http://dataomaha.com/gameday/&#123;&#123;gameday.season&#125;&#125;/&#123;&#123;gameday.slug&#125;&#125;" width="125" show_faces="false" send="false"></fb:like>
+
+				</div>
+				
+				<div class="logo" style="position: absolute; top: 10px; left: 10px;">
+				
+					<a href="http://omaha.com"><img src="http://dataomaha.com/media/odc-logo.png" style="height: 20px; border: 0px;"></a>
+				
+				</div>
+				
+				<div style="clear: both;"></div>
+				
+				
+		</div>
+	
+		</div>
+
+		<div id="topper">
+			<h1><span class="red">Husker</span> Game Day <span class="red">archives</span> </h1>
+		</div>
+		
+		<div id="container">
+				{% for game in games %}
+					<li>
+						<a href="/gameday/{{ game.season }}/{{ game.slug }}"><img class="logo" src="/media/{{ game.opponent_logo }}"></a>
+						<a href="/gameday/{{ game.season }}/{{ game.slug }}">{{ game.opponent|upper }} &raquo;</a>
+						<p class="date">{{ game.date }}</p>
+						<div style="clear: both;"></div></li>
+				{% endfor %}
+		</div>
+
+
+</body>
+
+
+
+<!-- Chartbeat -->
+	
+		<script type='text/javascript'>
+			var _sf_async_config={};
+			/** CONFIGURATION START **/
+			_sf_async_config.uid = 52047;
+			_sf_async_config.domain = 'omaha.com';
+			_sf_async_config.useCanonical = true;
+			_sf_async_config.sections = 'Dataomaha'; 
+			_sf_async_config.authors = 'Omaha.com';
+			/** CONFIGURATION END **/
+			(function(){
+			  function loadChartbeat() {
+				window._sf_endpt=(new Date()).getTime();
+				var e = document.createElement('script');
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+				document.body.appendChild(e);
+			  }
+			  var oldonload = window.onload;
+			  window.onload = (typeof window.onload != 'function') ?
+				 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+			})();
+		</script>
+		
+	<!-- Chartbeat -->
+	
+
+
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+
+	<!-- Chartbeat -->
+	<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+	<!-- /Chartbeat -->
+
+<title>Game Day: Nebraska vs. {{ gameday.opponent }}</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="apple-itunes-app" content="app-id=472372169" />
+<meta name="description" content="Live stats and complete coverage from Big Red Today and the Omaha World-Herald as Nebraska takes on {{ gameday.opponent }}." />
+
+<meta property="og:title" content="Game Day: Nebraska vs. {{ gameday.opponent }}" />
+<meta property="og:description" content="Live stats and complete coverage from Big Red Today and the Omaha World-Herald as Nebraska takes on {{ gameday.opponent }}." />
+<meta property="og:image" content="http://dataomaha.com/media/gameday/gameday-icon.png" />
+<meta property="og:url" content="http://dataomaha.com/gameday/{{gameday.season}}/{{gameday.slug}}" />
+<meta property="og:type" content="website" />
+
+
+<link rel="canonical" href="http://dataomaha.com/gameday/{{ gameday.season }}/{{ gameday.slug }}" />
+<link rel="apple-touch-icon-precomposed" href="/media/gameday/gameday-icon.png" />
+<link rel="icon" type="image/png" href="/media/gameday/gameday-icon.png">
+
+ 
+<!-- INCLUDE THESE STYLESHEET ONCE ON ANY PAGE YOU HAVE A STATS WIDGET -->
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/shsdefault.css">
+<link rel="stylesheet" type="text/css" href="http://omaha.stats.com/shs.css">
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/multidefault.css">
+<link rel="stylesheet" type="text/css" href="http://omaha.stats.com/multi.css">
+
+<link rel="shortcut icon" href="http://dataomaha.com/media/favicon.ico" type="image/x-icon" /> 
+
+<link rel="stylesheet" type="text/css" href="/media/gameday/gameday.css">
+<link rel="stylesheet" type="text/css" href="/media/gameday/mobile.css" media="screen and (max-width:641px)" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17420602-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- BH Media Google Analytics  -->
+
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-43117949-3', 'omaha.com');
+			  ga('send', 'pageview');
+		</script>
+
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=333670310003233";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="header">
+			
+				<div class="sharing" style="float: right; position: absolute; top: 10px; right: 10px;">
+				
+				<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1375828408.html#_=1377844623714&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdataomaha.com%2Fgameday%2F{{ gameday.season }}%2F{{ gameday.slug }}%2F&amp;size=m&amp;text=Game%20Day%20-%20Nebraska%20vs%20{{ gameday.opponent }}&amp;url=http%3A%2F%2Fdataomaha.com%2Fgameday%2F{{ gameday.season }}%2F{{ gameday.slug }}%2F&amp;via=OWHbigred" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe> <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+				<fb:like href="http://dataomaha.com/gameday/&#123;&#123;gameday.season&#125;&#125;/&#123;&#123;gameday.slug&#125;&#125;" width="125" show_faces="false" send="false"></fb:like>
+
+				</div>
+				
+				<div class="logo" style="position: absolute; top: 10px; left: 10px;">
+				
+					<a href="http://omaha.com"><img src="http://dataomaha.com/media/odc-logo.png" style="height: 20px; border: 0px;"></a>
+				
+				</div>
+				
+				<div style="clear: both;"></div>
+				
+				
+		</div>
+	
+		</div>
+
+		<div id="topper">
+		<h1><span class="red">Game Day:</span> Nebraska vs. {{ gameday.opponent }}</h1>
+		
+			
+	</div>
+	
+	<div id="container">
+
+<div id="nav-mobile">
+		
+		<ul class="options">
+				<li class="gametime"><p class="game-info"><img class="logo" src="/media/gameday/nu-logo.png"><img class="logo" src="/media/{{ gameday.opponent_logo }}">{{ gameday.game_info|safe }}</p></li>
+				{% if gameday.preview %}<li class="preview"><img class="icon" src="/media/gameday/helmet-white.png"></li>{% endif %}
+				{% if gameday.two_minute_drill_nu_rush_offense %}<li class="two-minute-drill"><img class="icon" src="/media/gameday/stopwatch-white.png"></li>{% endif %}
+				<li class="live-stats"><img class="icon" src="/media/gameday/football-white.png"></li>
+				<li class="articles"><img class="icon" src="/media/gameday/articles-white.png"></li>
+				<li class="photos"><img class="icon" src="/media/gameday/photos-white.png"></li>
+				{% if gameday.extras %}<li class="extras"><img class="icon" src="/media/gameday/bookmark-white.png"></li>{% endif %}
+				
+				<div style="clear: both;"></div>
+				
+			</ul>
+		
+	</div>
+
+	
+
+
+	<div id="nav">
+		
+		<ul class="options">
+				<li class="gametime">
+					<p class="game-info"><img class="logo" src="/media/gameday/nu-logo.png"><img class="logo" src="/media/{{ gameday.opponent_logo }}">{{ gameday.game_info|safe }}</p>
+					<div style="clear: both;"></div>
+				</li>
+				{% if gameday.preview %}<li class="preview"><a href="#preview"><img class="icon" src="/media/gameday/helmet-white.png">Preview</a></li>{% endif %}
+				{% if gameday.two_minute_drill_nu_rush_offense %}<li class="two-minute-drill"><a href="#two-minute-drill"><img class="icon" src="/media/gameday/stopwatch-white.png">2-Minute Drill</a></li>{% endif %}
+				<li class="live-stats"><a href="#live-stats"><img class="icon" src="/media/gameday/football-white.png">Live updates</a></li>
+				<li class="articles"><a href="#articles"><img class="icon" src="/media/gameday/articles-white.png">Articles</a></li>
+				{% if gameday.videos %}<li class="videos"><a href="#live-stats"><img class="icon" src="/media/gameday/videos-white.png">Videos</a></li>{% endif %}
+				<li class="photos"><a href="#photos"><img class="icon" src="/media/gameday/photos-white.png">Photos</a></li>
+				{% if gameday.extras %}<li class="extras"><a href="#extras"><img class="icon" src="/media/gameday/bookmark-white.png">Extras</a></li>{% endif %}
+				
+				<div style="clear: both;"></div>
+				
+			</ul>
+		
+	</div>
+	
+
+
+	<div id="field">			
+			
+			{% if gameday.preview %}
+			<div id="preview" class="section">
+				<div class="text">{{ gameday.preview|safe }}</div>	
+				{% if gameday.preview_image %} <img src="/media/{{ gameday.preview_image }}" class="preview" /> {% endif %}
+			</div>
+			{% endif %}
+	
+			<div id="two-minute-drill" class="section">
+				<h2><img class="icon" src="/media/gameday/stopwatch-black.png">2-Minute Drill {% if gameday.two_minute_drill_author %}<span class="author">by {{ gameday.two_minute_drill_author }}</span>{% endif %}</h2>
+				<p class="label">Nebraska rush offense vs. {{ gameday.opponent }} rush defense</p>
+				<p>{{ gameday.two_minute_drill_nu_rush_offense|safe }}</p>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/19"></iframe></p>
+
+				<p class="label">Nebraska pass offense vs. {{ gameday.opponent }} pass defense</p>
+				<p>{{ gameday.two_minute_drill_nu_pass_offense|safe }}</p>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/20"></iframe></p>
+
+				<p class="label">{{ gameday.opponent }} rush offense vs. Nebraska rush defense</p>
+				<p>{{ gameday.two_minute_drill_opp_rush_offense|safe }}</p>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/21"></iframe></p>
+
+				<p class="label">{{ gameday.opponent }} pass offense vs. Nebraska pass defense</p>
+				<p>{{ gameday.two_minute_drill_opp_pass_offense|safe }}</p>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/22"></iframe></p>
+
+				<p class="label">Special teams</p>
+				<p>{{ gameday.two_minute_drill_special_teams|safe }}</p>	
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/23"></iframe></p>
+
+
+				<p class="label">Intangibles</p>
+				<p>{{ gameday.two_minute_drill_intangibles|safe }}</p>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/24"></iframe></p>
+
+
+				<p class="label">Key matchup: {{ gameday.two_minute_drill_matchup }}</p>
+				<p>{{ gameday.two_minute_drill_key_matchup|safe }}</p>
+
+				<p class="label">Nebraska wins if ...</p>
+				<p>{{ gameday.two_minute_drill_nu_wins_if|safe }}</p>
+
+				<p class="label">{{ gameday.opponent }} wins if ...</p>
+				<p>{{ gameday.two_minute_drill_opp_wins_if|safe }}</p>
+
+				<p class="label">Our take</p>
+				<p>{{ gameday.two_minute_drill_our_take|safe }}</p>
+
+				<h2>Our prediction: <span class="red">{{ gameday.two_minute_drill_prediction|safe }}</span></h2>
+				<p><iframe width=100% height=250 scrolling="no" frameborder=0 src="http://dataomaha.com/polls/25"></iframe></p>
+	
+
+			</div>
+	
+			
+			<div id="live-stats" class="section">
+				<h2><img class="icon" src="/media/gameday/football-black.png">Live updates</h2>
+				<p><iframe src="http://dataomaha.com/media/gameday/score-widget.html" width=100% height=120 frameborder=0 scrolling=no></iframe>
+				<p>{{ gameday.live_chat|safe }}
+			</div>
+	
+	
+			<div id="photos" class="section">
+				{% if gameday.photos_fans or gameday.photos_action %}<h2><img class="icon" src="/media/gameday/photos-black.png">Photos</h2>{% endif %}
+				<p>{% if gameday.photos_fans %}<a class="button" href="{{ gameday.photos_fans }}" target="_blank">World-Herald fan photos &raquo;</a>{% endif %}{% if gameday.photos_action %}<a class="button" href="{{ gameday.photos_action }}" target="_blank">World-Herald game action &raquo; {% endif %}</a></p>
+				
+				<h2>#Huskers on Instagram</h2>
+				<p><iframe src="http://snapwidget.com/in/?h=aHVza2Vyc3xpbnw5NXw2fDV8RkZGRkZGfHllc3wxMXxmYWRlT3V0fG9uU3RhcnR8bm8=&v=13913" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:696px; height: 580px" ></iframe>
+
+				
+
+			</div>
+			
+			<div id="videos" class="section desktop">
+				<h2><img class="icon" src="/media/gameday/videos-black.png">Videos</h2>
+				<div style="margin: 0 auto; width: 600px;">{{ gameday.videos|safe }}</div>
+				
+				<div style="clear: both;"></div>
+			</div>
+
+			
+
+			<div id="extras" class="section">
+				<h2><img class="icon" src="/media/gameday/bookmark-black.png">Extras</h2>
+				{{ gameday.extras|safe }}
+				
+				<div style="clear: both;"></div>
+			</div>
+						
+			<div id="articles" class="section">
+				<h2><img class="icon" src="/media/gameday/articles-black.png">Big Red Today coverage</h2>
+				{% load rssplug %}
+				{% rssplug "http://www.omaha.com/search/?mode=article&q=&t=article&l=30&d=&d1=1+year+ago&d2=&s=&sd=desc&c[]=huskers/football*&f=atom&fulltext=odcmobile" "gameday/articles.html" %}
+				
+				<div style="clear: both;"></div>
+			</div>
+	
+	</div>
+		<div style="clear: both;"></div>
+	
+	</div>
+
+
+</body>
+
+
+<!-- Chartbeat -->
+	
+		<script type='text/javascript'>
+			var _sf_async_config={};
+			/** CONFIGURATION START **/
+			_sf_async_config.uid = 52047;
+			_sf_async_config.domain = 'omaha.com';
+			_sf_async_config.useCanonical = true;
+			_sf_async_config.sections = 'dataomaha'; 
+			_sf_async_config.authors = 'Omaha.com';
+			/** CONFIGURATION END **/
+			(function(){
+			  function loadChartbeat() {
+				window._sf_endpt=(new Date()).getTime();
+				var e = document.createElement('script');
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+				document.body.appendChild(e);
+			  }
+			  var oldonload = window.onload;
+			  window.onload = (typeof window.onload != 'function') ?
+				 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+			})();
+		</script>
+		
+	<!-- Chartbeat -->
+	
+
+
+
+<script src="/media/scripts/jquery-1.5.1.js"></script> 
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		$('div#preview').hide();
+		$('div#two-minute-drill').hide();
+		$('div#live-stats').hide();
+		$('div#extras').hide();
+		$('div#articles').hide();
+		$('div#videos').hide();
+		$('div#photos').hide();
+		
+		
+		{% if gameday.game_progress %}
+		
+		$('div#{{ gameday.game_progress|safe }}').show();
+		$('ul.options li.{{ gameday.game_progress|safe }}').addClass('active');
+		
+		{% else %}
+		
+		$('div#articles').show();
+		$('ul.options li.articles').addClass('active');
+		
+		{% endif %}
+	
+	
+		$("ul.options li").click(function () {
+			$("#" + $(this).attr("class")).show().siblings('div').hide();
+			$(this).addClass('active').siblings('li').removeClass('active');
+		});
+
+
+	});
+</script>
+
+
+</html>

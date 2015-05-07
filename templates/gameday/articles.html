@@ -1,0 +1,17 @@
+{% load i18n %}
+{% load rssplug %}
+
+{% if "TEASERS" not in item.link %}
+<div class="story">
+
+<h4><a href="{{ item.link }}">{{ item.title|safe }}</a></h4>
+
+
+
+<p class="summary">{{ item.description|safe|truncatewords_html:"30" }}</p>
+
+<div style="clear: both;"></div>
+
+</div>
+
+{% endif %}
